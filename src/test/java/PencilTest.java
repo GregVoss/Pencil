@@ -35,20 +35,27 @@ public class PencilTest {
     }
 
     @Test
-    public void penHasDurability() {
+    public void pencilHasDurability() {
         assertEquals(pencil.getDurability(), 1000);
     }
 
     @Test
-    public void penHasDeclaredDurability() {
+    public void pencilHasDeclaredDurability() {
         PencilClass pencilDurability = new PencilClass(5000);
         assertEquals(pencilDurability.getDurability(), 5000);
     }
 
     @Test
-    public void penLosesDurabilityWhenWriting() {
+    public void pencilLosesDurabilityWhenWriting() {
         pencil.writeText("Length7");
         assertEquals(pencil.getDurability(), 993);
+    }
+
+    @Test
+    public void whenPencilIsEmptyItCannotWrite() {
+        PencilClass blankPencil = new PencilClass(0);
+        blankPencil.writeText("Length7");
+        assertEquals(blankPencil.readText(), "");
     }
 }
 

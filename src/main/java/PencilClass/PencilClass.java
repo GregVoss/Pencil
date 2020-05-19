@@ -13,8 +13,10 @@ public class PencilClass {
     }
 
     public void writeText(String textToWrite) {
-        paperText += textToWrite;
-        durability = durability - textToWrite.length();
+        if(durability > 0) {
+            paperText += textToWrite;
+            durability = durability - textToWrite.length();
+        }
     }
 
     public String readText() {
