@@ -84,6 +84,7 @@ public class PencilClass {
         String middleString = generateConflictString(textToReplace, paperText.substring(lastIndex, maxLength));
 
         paperText = prefix+middleString+suffix;
+        pencilDurability -= middleString.replaceAll("\\s", "").length();
     }
 
     private String generateConflictString(String textToReplace, String oldSubstring) {

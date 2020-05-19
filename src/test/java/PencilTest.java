@@ -174,6 +174,7 @@ public class PencilTest {
         pencil.edit("onion");
 
         assertEquals("An onion a day keeps the doctor away", pencil.readText());
+        assertEquals(965, pencil.getDurability());
     }
 
     @Test
@@ -183,6 +184,7 @@ public class PencilTest {
         pencil.edit("artichoke");
 
         assertEquals("An artich@k@ay keeps the doctor away", pencil.readText());
+        assertEquals(961, pencil.getDurability());
     }
 
     @Test
@@ -192,6 +194,7 @@ public class PencilTest {
         pencil.edit("at bay");
 
         assertEquals("An apple a day keeps the doctor at bay", pencil.readText());
+        assertEquals(965, pencil.getDurability());
     }
 }
 
