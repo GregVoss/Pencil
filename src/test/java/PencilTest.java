@@ -23,7 +23,7 @@ public class PencilTest {
     public void whenTextIsWrittenThePaperContainsTheText() {
         pencil.writeText("This is the Test");
 
-        assertEquals(pencil.readText(), "This is the Test");
+        assertEquals("This is the Test", pencil.readText());
     }
 
     @Test
@@ -31,31 +31,31 @@ public class PencilTest {
         pencil.writeText("This is the Test");
         pencil.writeText(" and this is the next Test");
 
-        assertEquals(pencil.readText(), "This is the Test and this is the next Test");
+        assertEquals("This is the Test and this is the next Test", pencil.readText());
     }
 
     @Test
     public void pencilHasDurability() {
-        assertEquals(pencil.getDurability(), 1000);
+        assertEquals(1000, pencil.getDurability());
     }
 
     @Test
     public void pencilHasDeclaredDurability() {
         PencilClass pencilDurability = new PencilClass(5000);
-        assertEquals(pencilDurability.getDurability(), 5000);
+        assertEquals(5000, pencilDurability.getDurability());
     }
 
     @Test
     public void pencilLosesDurabilityWhenWriting() {
         pencil.writeText("Length7");
-        assertEquals(pencil.getDurability(), 993);
+        assertEquals(993, pencil.getDurability());
     }
 
     @Test
     public void whenPencilIsEmptyItCannotWrite() {
         PencilClass blankPencil = new PencilClass(0);
         blankPencil.writeText("Length7");
-        assertEquals(blankPencil.readText(), "");
+        assertEquals("", blankPencil.readText());
     }
 }
 
