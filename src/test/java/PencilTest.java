@@ -47,7 +47,7 @@ public class PencilTest {
 
     @Test
     public void pencilLosesDurabilityWhenWriting() {
-        pencil.writeText("Length7");
+        pencil.writeText("length7");
         assertEquals(993, pencil.getDurability());
     }
 
@@ -60,7 +60,7 @@ public class PencilTest {
 
     @Test
     public void whenTextIsWrittenSpacesAreNotCounted() {
-        pencil.writeText("There are 7 spaces and length of 35");
+        pencil.writeText("there are 7 spaces and length of 35");
         assertEquals(972, pencil.getDurability());
     }
 
@@ -69,6 +69,12 @@ public class PencilTest {
         PencilClass shortPencil = new PencilClass(5);
         shortPencil.writeText("a longer sentence");
         assertEquals("a long", shortPencil.readText());
+    }
+
+    @Test
+    public void whenTextIsWrittenUpperCaseisDoubled() {
+        pencil.writeText("Caps");
+        assertEquals(995, pencil.getDurability());
     }
 }
 

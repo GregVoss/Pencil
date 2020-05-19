@@ -19,7 +19,7 @@ public class PencilClass {
             paperText += currentChar;
 
             if(!Character.isWhitespace(currentChar)) {
-                durability--;
+                durability = Character.isUpperCase(currentChar)?durability-2:durability-1;
             }
         }
     }
