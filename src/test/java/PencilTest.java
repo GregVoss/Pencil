@@ -82,6 +82,14 @@ public class PencilTest {
         PencilClass shortPencil = new PencilClass(5);
         shortPencil.writeText("carpS");
         assertEquals("carp", shortPencil.readText());
+    }
+
+    @Test
+    public void pencilHasSharpenedValueEqualToOriginalLength() {
+        pencil.writeText("This will remove characters");
+        pencil.sharpen();
+
+        assertEquals(1000, pencil.getDurability());
 
     }
 }

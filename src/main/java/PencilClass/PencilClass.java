@@ -4,12 +4,14 @@ public class PencilClass {
 
     private String paperText = "";
     private int durability = 1000;
+    private int sharpenValue = 1000;
 
     public PencilClass() {
     }
 
     public PencilClass(int pencilDurability) {
         durability = pencilDurability;
+        sharpenValue = pencilDurability;
     }
 
     public void writeText(String textToWrite) {
@@ -34,6 +36,10 @@ public class PencilClass {
 
     public int getDurability() {
         return durability;
+    }
+
+    public void sharpen() {
+        durability = sharpenValue;
     }
 
 }
