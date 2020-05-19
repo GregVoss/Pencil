@@ -35,7 +35,7 @@ public class PencilTest {
     }
 
     @Test
-    public void pencilHasDurability() {
+    public void pencilHasDefaultDurability() {
         assertEquals(1000, pencil.getDurability());
     }
 
@@ -125,6 +125,12 @@ public class PencilTest {
     @Test
     public void eraserHasDefaultDurability() {
         assertEquals(100, pencil.getEraserDurability());
+    }
+
+    @Test
+    public void eraserHasDeclaredDurability() {
+        PencilClass pencilDurability = new PencilClass(5000, 200);
+        assertEquals(200, pencilDurability.getEraserDurability());
     }
 }
 

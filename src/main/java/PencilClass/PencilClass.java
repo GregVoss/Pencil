@@ -16,6 +16,12 @@ public class PencilClass {
         sharpenValue = pencilDurability;
     }
 
+    public PencilClass(int pencilDurability, int eraserDurability) {
+        durability = pencilDurability;
+        sharpenValue = pencilDurability;
+        this.eraserDurability = eraserDurability;
+    }
+
     public void writeText(String textToWrite) {
         for(int charPlace = 0; charPlace < textToWrite.length() && durability > 0; charPlace++) {
             char currentChar = textToWrite.charAt(charPlace);
