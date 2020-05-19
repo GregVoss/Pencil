@@ -158,5 +158,13 @@ public class PencilTest {
         assertEquals("Text to write", emptyEraser.readText());
     }
 
+    @Test
+    public void eraserOnlyRemovesLastPartWhenDurabilityIsLow() {
+        PencilClass lowEraser = new PencilClass(1000, 10);
+        lowEraser.writeText("This will help keep track of erasing Carcharodontosaurus long words");
+        lowEraser.erase("Carcharodontosaurus");
+
+        assertEquals("This will help keep track of erasing Carcharod           long words", lowEraser.readText());
+    }
 }
 
