@@ -63,10 +63,7 @@ public class PencilClass {
             if(lastIndex != -1) {
                 String prefix = paperText.substring(0, lastIndex);
                 String suffix = paperText.substring(lastIndex + amountToRemove);
-                String spaceString="";
-                for (int x = 0; x < amountToRemove; x++) {
-                    spaceString+=" ";
-                }
+                String spaceString=getEmptyString(amountToRemove);
 
                 paperText = prefix+spaceString+suffix;
             }
@@ -75,6 +72,7 @@ public class PencilClass {
             eraserDurability = cleanedLength>eraserDurability?0:eraserDurability-cleanedLength;
         }
     }
+
 
     /**  GET Methods **/
 
@@ -88,5 +86,14 @@ public class PencilClass {
 
     public int getEraserDurability() {
         return eraserDurability;
+    }
+
+    public String getEmptyString(int lengthOfString) {
+        String spaceString="";
+        for (int x = 0; x < lengthOfString; x++) {
+            spaceString+=" ";
+        }
+
+        return  spaceString;
     }
 }
