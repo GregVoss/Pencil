@@ -73,6 +73,14 @@ public class PencilClass {
         }
     }
 
+    public void edit(String textToReplace) {
+        int lastIndex = paperText.indexOf("  ")+1;
+        String prefix = paperText.substring(0, lastIndex);
+        String suffix = paperText.substring(lastIndex + textToReplace.length());
+
+        paperText = prefix+textToReplace+suffix;
+    }
+
 
     /**  GET Methods **/
 

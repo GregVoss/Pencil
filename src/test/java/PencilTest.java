@@ -166,5 +166,14 @@ public class PencilTest {
 
         assertEquals("This will help keep track of erasing Carcharod           long words", lowEraser.readText());
     }
+
+    @Test
+    public void editingWritesNewTextOverTheFirstMultipleSpacedSection() {
+        pencil.writeText("An apple a day keeps the doctor away");
+        pencil.erase("apple");
+        pencil.edit("onion");
+
+        assertEquals("An onion a day keeps the doctor away", pencil.readText());
+    }
 }
 
