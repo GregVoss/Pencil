@@ -60,8 +60,15 @@ public class PencilTest {
 
     @Test
     public void whenTextIsWrittenSpacesAreNotCounted() {
-        pencil.writeText("The are 7 spaces and length of 33");
-        assertEquals(974, pencil.getDurability());
+        pencil.writeText("There are 7 spaces and length of 35");
+        assertEquals(972, pencil.getDurability());
+    }
+
+    @Test
+    public void onlyWriteUntilEmpty() {
+        PencilClass shortPencil = new PencilClass(5);
+        shortPencil.writeText("a longer sentence");
+        assertEquals("a long", shortPencil.readText());
     }
 }
 

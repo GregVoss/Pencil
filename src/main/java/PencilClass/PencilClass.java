@@ -13,11 +13,14 @@ public class PencilClass {
     }
 
     public void writeText(String textToWrite) {
-        String spacelessText = textToWrite.replaceAll("\\s", "");
+        for(int charPlace = 0; charPlace < textToWrite.length() && durability > 0; charPlace++) {
+            char currentChar = textToWrite.charAt(charPlace);
 
-        if(durability > 0) {
-            paperText += textToWrite;
-            durability = durability - spacelessText.length();
+            paperText += currentChar;
+
+            if(!Character.isWhitespace(currentChar)) {
+                durability--;
+            }
         }
     }
 
