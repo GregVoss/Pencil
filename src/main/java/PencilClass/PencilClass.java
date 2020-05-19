@@ -13,9 +13,11 @@ public class PencilClass {
     }
 
     public void writeText(String textToWrite) {
+        String spacelessText = textToWrite.replaceAll("\\s", "");
+
         if(durability > 0) {
             paperText += textToWrite;
-            durability = durability - textToWrite.length();
+            durability = durability - spacelessText.length();
         }
     }
 

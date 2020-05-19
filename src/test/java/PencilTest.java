@@ -57,5 +57,11 @@ public class PencilTest {
         blankPencil.writeText("Length7");
         assertEquals("", blankPencil.readText());
     }
+
+    @Test
+    public void whenTextIsWrittenSpacesAreNotCounted() {
+        pencil.writeText("The are 7 spaces and length of 33");
+        assertEquals(974, pencil.getDurability());
+    }
 }
 
