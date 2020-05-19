@@ -5,6 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PencilClass/PencilClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PencilClass/PencilClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PencilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PencilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PencilClass/PencilClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PencilClass/PencilClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PencilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PencilTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,25 +87,57 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2516" height="277" key="GridCell.Tab.0.bottom" timestamp="1589919993812">
+    <state width="2516" height="277" key="GridCell.Tab.0.bottom" timestamp="1589921233273">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2516" height="277" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1589919993812" />
-    <state width="2516" height="277" key="GridCell.Tab.0.center" timestamp="1589919993812">
+    <state width="2516" height="277" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1589921233273" />
+    <state width="2516" height="277" key="GridCell.Tab.0.center" timestamp="1589921233273">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2516" height="277" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1589919993812" />
-    <state width="2516" height="277" key="GridCell.Tab.0.left" timestamp="1589919993812">
+    <state width="2516" height="277" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1589921233273" />
+    <state width="2516" height="277" key="GridCell.Tab.0.left" timestamp="1589921233272">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2516" height="277" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1589919993812" />
-    <state width="2516" height="277" key="GridCell.Tab.0.right" timestamp="1589919993812">
+    <state width="2516" height="277" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1589921233272" />
+    <state width="2516" height="277" key="GridCell.Tab.0.right" timestamp="1589921233273">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2516" height="277" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1589919993812" />
+    <state width="2516" height="277" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1589921233273" />
+    <state width="2516" height="342" key="GridCell.Tab.1.bottom" timestamp="1589921232912">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2516" height="342" key="GridCell.Tab.1.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1589921232912" />
+    <state width="2516" height="342" key="GridCell.Tab.1.center" timestamp="1589921232912">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2516" height="342" key="GridCell.Tab.1.center/0.0.2560.1040@0.0.2560.1040" timestamp="1589921232912" />
+    <state width="2516" height="342" key="GridCell.Tab.1.left" timestamp="1589921232912">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2516" height="342" key="GridCell.Tab.1.left/0.0.2560.1040@0.0.2560.1040" timestamp="1589921232912" />
+    <state width="2516" height="342" key="GridCell.Tab.1.right" timestamp="1589921232912">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2516" height="342" key="GridCell.Tab.1.right/0.0.2560.1040@0.0.2560.1040" timestamp="1589921232912" />
     <state x="936" y="235" key="run.anything.popup" timestamp="1589918257937">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="936" y="235" key="run.anything.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1589918257937" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/PencilClass/PencilClass.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/PencilClass/PencilClass.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

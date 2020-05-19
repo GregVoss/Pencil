@@ -75,10 +75,13 @@ public class PencilClass {
 
     public void edit(String textToReplace) {
         int lastIndex = paperText.indexOf("  ")+1;
-        String prefix = paperText.substring(0, lastIndex);
-        String suffix = paperText.substring(lastIndex + textToReplace.length());
+        int maxLength = lastIndex+textToReplace.length() > paperText.length()? paperText.length() : lastIndex+textToReplace.length();
 
-        String middleString = generateConflictString(textToReplace, paperText.substring(lastIndex, lastIndex+textToReplace.length()));
+        String prefix = paperText.substring(0, lastIndex);
+
+        String suffix = paperText.substring(maxLength);
+
+        String middleString = generateConflictString(textToReplace, paperText.substring(lastIndex, maxLength));
 
         paperText = prefix+middleString+suffix;
     }
@@ -86,7 +89,7 @@ public class PencilClass {
     private String generateConflictString(String textToReplace, String oldSubstring) {
         String generatedString = "";
 
-        for(int counter=0; counter<textToReplace.length(); counter++) {
+        for(int counter=0; counter<oldSubstring.length(); counter++) {
             if(Character.isWhitespace(oldSubstring.charAt(counter))) {
                 generatedString += textToReplace.charAt(counter);
             }
