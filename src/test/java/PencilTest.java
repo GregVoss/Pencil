@@ -148,5 +148,15 @@ public class PencilTest {
 
         assertEquals(93, pencil.getEraserDurability());
     }
+
+    @Test
+    public void eraserDoesNotEraseWhenDurabilityIsZero() {
+        PencilClass emptyEraser = new PencilClass(1000, 0);
+        emptyEraser.writeText("Text to write");
+        emptyEraser.erase("t");
+
+        assertEquals("Text to write", emptyEraser.readText());
+    }
+
 }
 

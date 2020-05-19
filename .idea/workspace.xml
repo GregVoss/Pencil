@@ -86,21 +86,25 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2516" height="277" key="GridCell.Tab.0.bottom" timestamp="1589917840469">
+    <state width="2516" height="277" key="GridCell.Tab.0.bottom" timestamp="1589918437614">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2516" height="277" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1589917840469" />
-    <state width="2516" height="277" key="GridCell.Tab.0.center" timestamp="1589917840469">
+    <state width="2516" height="277" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1589918437614" />
+    <state width="2516" height="277" key="GridCell.Tab.0.center" timestamp="1589918437614">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2516" height="277" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1589917840469" />
-    <state width="2516" height="277" key="GridCell.Tab.0.left" timestamp="1589917840469">
+    <state width="2516" height="277" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1589918437614" />
+    <state width="2516" height="277" key="GridCell.Tab.0.left" timestamp="1589918437614">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2516" height="277" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1589917840469" />
-    <state width="2516" height="277" key="GridCell.Tab.0.right" timestamp="1589917840469">
+    <state width="2516" height="277" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1589918437614" />
+    <state width="2516" height="277" key="GridCell.Tab.0.right" timestamp="1589918437614">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2516" height="277" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1589917840469" />
+    <state width="2516" height="277" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1589918437614" />
+    <state x="936" y="235" key="run.anything.popup" timestamp="1589918257937">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="936" y="235" key="run.anything.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1589918257937" />
   </component>
 </project>

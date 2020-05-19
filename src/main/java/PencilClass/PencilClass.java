@@ -50,19 +50,22 @@ public class PencilClass {
     }
 
     public void erase(String textToRemove) {
-        int lastIndex = paperText.lastIndexOf(textToRemove);
-        if(lastIndex != -1) {
-            String prefix = paperText.substring(0, lastIndex);
-            String suffix = paperText.substring(lastIndex + textToRemove.length());
-            String spaceString="";
-            for (int x = 0; x < textToRemove.length(); x++) {
-                spaceString+=" ";
+        if(eraserDurability > 0)
+        {
+            int lastIndex = paperText.lastIndexOf(textToRemove);
+            if(lastIndex != -1) {
+                String prefix = paperText.substring(0, lastIndex);
+                String suffix = paperText.substring(lastIndex + textToRemove.length());
+                String spaceString="";
+                for (int x = 0; x < textToRemove.length(); x++) {
+                    spaceString+=" ";
+                }
+
+                paperText = prefix+spaceString+suffix;
             }
 
-            paperText = prefix+spaceString+suffix;
+            eraserDurability -= textToRemove.replaceAll("\\s", "").length();
         }
-
-        eraserDurability -= textToRemove.replaceAll("\\s", "").length();
     }
 
     /**  GET Methods **/
