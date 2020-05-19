@@ -134,12 +134,19 @@ public class PencilTest {
     }
 
     @Test
-    public void erasesLosesDurability() {
+    public void eraserLosesDurability() {
         pencil.writeText("Remove the last reference to text Adding an additional last for testing");
         pencil.erase("last");
 
         assertEquals(96, pencil.getEraserDurability());
     }
 
+    @Test
+    public void eraserDurabilityIsUnaffectedBySpaces() {
+        pencil.writeText("Remove the last reference to text Adding an additional last for testing");
+        pencil.erase("last for");
+
+        assertEquals(93, pencil.getEraserDurability());
+    }
 }
 

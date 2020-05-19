@@ -62,7 +62,7 @@ public class PencilClass {
             paperText = prefix+spaceString+suffix;
         }
 
-        eraserDurability -= textToRemove.length();
+        eraserDurability -= textToRemove.replaceAll("\\s", "").length();
     }
 
     /**  GET Methods **/
