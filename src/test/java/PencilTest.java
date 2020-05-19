@@ -33,5 +33,10 @@ public class PencilTest {
 
         assertEquals(pencil.readText(), "This is the Test and this is the next Test");
     }
+
+    @Test
+    public void penHasDurability() {
+        assertEquals(pencil.getDurability(), 1000);
+    }
 }
 
