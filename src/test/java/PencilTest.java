@@ -121,5 +121,10 @@ public class PencilTest {
 
         assertEquals("Remove the last reference to text Adding an additional      for testing", pencil.readText());
     }
+
+    @Test
+    public void eraserHasDefaultDurability() {
+        assertEquals(100, pencil.getEraserDurability());
+    }
 }
 

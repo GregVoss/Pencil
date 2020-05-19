@@ -6,6 +6,7 @@ public class PencilClass {
     private int durability = 1000;
     private int sharpenValue = 1000;
     private int pencilLength = 10;
+    private int eraserDurability = 100;
 
     public PencilClass() {
     }
@@ -50,6 +51,10 @@ public class PencilClass {
         return pencilLength;
     }
 
+    public int getEraserDurability() {
+        return eraserDurability;
+    }
+
     public void erase(String textToRemove) {
         int lastIndex = paperText.lastIndexOf(textToRemove);
         if(lastIndex != -1) {
@@ -63,5 +68,4 @@ public class PencilClass {
             paperText = prefix+spaceString+suffix;
         }
     }
-
 }
