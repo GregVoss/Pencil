@@ -38,5 +38,11 @@ public class PencilTest {
     public void penHasDurability() {
         assertEquals(pencil.getDurability(), 1000);
     }
+
+    @Test
+    public void penHasDeclaredDurability() {
+        PencilClass pencilDurability = new PencilClass(5000);
+        assertEquals(pencilDurability.getDurability(), 5000);
+    }
 }
 

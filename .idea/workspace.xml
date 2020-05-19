@@ -5,6 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PencilClass/PencilClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PencilClass/PencilClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PencilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PencilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PencilClass/PencilClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PencilClass/PencilClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PencilTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PencilTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,7 @@
       <recent name="PencilClass" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.PencilTest">
     <configuration name="PencilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Pencil" />
       <option name="PACKAGE_NAME" value="" />
@@ -54,9 +56,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PencilTest.penHasDeclaredDurability" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pencil" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PencilTest" />
+      <option name="METHOD_NAME" value="penHasDeclaredDurability" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PencilTest" />
+        <item itemvalue="JUnit.PencilTest.penHasDeclaredDurability" />
       </list>
     </recent_temporary>
   </component>
@@ -74,21 +87,21 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2516" height="277" key="GridCell.Tab.0.bottom" timestamp="1589911791086">
+    <state width="2516" height="277" key="GridCell.Tab.0.bottom" timestamp="1589912399997">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2516" height="277" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1589911791086" />
-    <state width="2516" height="277" key="GridCell.Tab.0.center" timestamp="1589911791086">
+    <state width="2516" height="277" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1589912399997" />
+    <state width="2516" height="277" key="GridCell.Tab.0.center" timestamp="1589912399997">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2516" height="277" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1589911791086" />
-    <state width="2516" height="277" key="GridCell.Tab.0.left" timestamp="1589911791086">
+    <state width="2516" height="277" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1589912399997" />
+    <state width="2516" height="277" key="GridCell.Tab.0.left" timestamp="1589912399997">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2516" height="277" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1589911791086" />
-    <state width="2516" height="277" key="GridCell.Tab.0.right" timestamp="1589911791086">
+    <state width="2516" height="277" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1589912399997" />
+    <state width="2516" height="277" key="GridCell.Tab.0.right" timestamp="1589912399997">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2516" height="277" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1589911791086" />
+    <state width="2516" height="277" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1589912399997" />
   </component>
 </project>
