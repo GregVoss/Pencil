@@ -103,5 +103,15 @@ public class PencilTest {
 
         assertEquals(9, pencil.getLength());
     }
+
+    @Test
+    public void whenPencilHasZeroLengthItCannotSharpen() {
+        for(int count = 0; count < 12; count++) {
+            pencil.writeText("test");
+            pencil.sharpen();
+        }
+
+        assertEquals(992, pencil.getDurability());
+    }
 }
 
