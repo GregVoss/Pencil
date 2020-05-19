@@ -186,12 +186,12 @@ public class PencilTest {
     }
 
     @Test
-    public void editingOnlyGoesUntilEndOfString() {
+    public void editingOnTheEndAppendsValues() {
         pencil.writeText("An apple a day keeps the doctor away");
         pencil.erase("away");
         pencil.edit("at bay");
 
-        assertEquals("An apple a day keeps the doctor at b", pencil.readText());
+        assertEquals("An apple a day keeps the doctor at bay", pencil.readText());
     }
 }
 

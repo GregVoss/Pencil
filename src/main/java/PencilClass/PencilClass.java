@@ -98,6 +98,10 @@ public class PencilClass {
             }
         }
 
+        if(oldSubstring.length() < textToReplace.length()) {
+            generatedString += textToReplace.substring(oldSubstring.length(), textToReplace.length());
+        }
+
         return generatedString;
     }
 
