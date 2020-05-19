@@ -113,5 +113,13 @@ public class PencilTest {
 
         assertEquals(992, pencil.getDurability());
     }
+
+    @Test
+    public void pencilErasesLastText() {
+        pencil.writeText("Remove the last reference to text Adding an additional last for testing");
+        pencil.erase("last");
+
+        assertEquals("Remove the last reference to text Adding an additional      for testing", pencil.readText());
+    }
 }
 
