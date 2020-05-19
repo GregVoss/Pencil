@@ -194,7 +194,17 @@ public class PencilTest {
         pencil.edit("at bay");
 
         assertEquals("An apple a day keeps the doctor at bay", pencil.readText());
-        assertEquals(965, pencil.getDurability());
+        assertEquals(967, pencil.getDurability());
+    }
+
+    @Test
+    public void whenThePencilDurabilityIsLowOnlyEditUpToACertainPoint() {
+        PencilClass lowLead = new PencilClass(37);
+        lowLead.writeText("An apple a day keeps the doctor away");
+        lowLead.erase("apple");
+        lowLead.edit("artichoke");
+
+        assertEquals("An artich@ day keeps the doctor away", lowLead.readText());
     }
 }
 

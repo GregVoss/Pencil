@@ -84,23 +84,42 @@ public class PencilClass {
         String middleString = generateConflictString(textToReplace, paperText.substring(lastIndex, maxLength));
 
         paperText = prefix+middleString+suffix;
-        pencilDurability -= middleString.replaceAll("\\s", "").length();
+        //pencilDurability -= middleString.replaceAll("\\s", "").length();
     }
 
     private String generateConflictString(String textToReplace, String oldSubstring) {
         String generatedString = "";
 
         for(int counter=0; counter<oldSubstring.length(); counter++) {
-            if(Character.isWhitespace(oldSubstring.charAt(counter))) {
-                generatedString += textToReplace.charAt(counter);
+            if(pencilDurability > 0) {
+                if(Character.isWhitespace(oldSubstring.charAt(counter)) && !Character.isWhitespace(textToReplace.charAt(counter))) {
+                    generatedString += textToReplace.charAt(counter);
+
+                    if(!Character.isWhitespace(textToReplace.charAt(counter))) {
+                        pencilDurability--;
+                    }
+                }
+                else if (Character.isWhitespace(textToReplace.charAt(counter))) {
+                    generatedString += oldSubstring.charAt(counter);
+                }
+                else {
+                    generatedString += "@";
+                    pencilDurability--;
+                }
             }
             else {
-                generatedString += "@";
+                generatedString += oldSubstring.charAt(counter);
             }
         }
 
         if(oldSubstring.length() < textToReplace.length()) {
-            generatedString += textToReplace.substring(oldSubstring.length(), textToReplace.length());
+            int newEndOfSubstring = textToReplace.length();
+
+            if(pencilDurability < textToReplace.length()-oldSubstring.length() ){
+                newEndOfSubstring = oldSubstring.length()+pencilDurability;
+            }
+
+            generatedString += textToReplace.substring(oldSubstring.length(), newEndOfSubstring);
         }
 
         return generatedString;
