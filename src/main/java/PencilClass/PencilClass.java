@@ -78,7 +78,24 @@ public class PencilClass {
         String prefix = paperText.substring(0, lastIndex);
         String suffix = paperText.substring(lastIndex + textToReplace.length());
 
-        paperText = prefix+textToReplace+suffix;
+        String middleString = generateConflictString(textToReplace, paperText.substring(lastIndex, lastIndex+textToReplace.length()));
+
+        paperText = prefix+middleString+suffix;
+    }
+
+    private String generateConflictString(String textToReplace, String oldSubstring) {
+        String generatedString = "";
+
+        for(int counter=0; counter<textToReplace.length(); counter++) {
+            if(Character.isWhitespace(oldSubstring.charAt(counter))) {
+                generatedString += textToReplace.charAt(counter);
+            }
+            else {
+                generatedString += "@";
+            }
+        }
+
+        return generatedString;
     }
 
 

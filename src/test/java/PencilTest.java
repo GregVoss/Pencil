@@ -175,5 +175,14 @@ public class PencilTest {
 
         assertEquals("An onion a day keeps the doctor away", pencil.readText());
     }
+
+    @Test
+    public void replacesOverLappingCharactersWithAmpersands() {
+        pencil.writeText("An apple a day keeps the doctor away");
+        pencil.erase("apple");
+        pencil.edit("artichoke");
+
+        assertEquals("An artich@k@ay keeps the doctor away", pencil.readText());
+    }
 }
 
