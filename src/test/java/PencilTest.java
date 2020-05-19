@@ -11,7 +11,7 @@ public class PencilTest {
 
     @Before
     public void setupTests() {
-        pencil = new PencilClass();
+        pencil = new PencilClass(1000);
     }
 
     @Test
@@ -43,6 +43,12 @@ public class PencilTest {
     public void penHasDeclaredDurability() {
         PencilClass pencilDurability = new PencilClass(5000);
         assertEquals(pencilDurability.getDurability(), 5000);
+    }
+
+    @Test
+    public void penLosesDurabilityWhenWriting() {
+        pencil.writeText("Length7");
+        assertEquals(pencil.getDurability(), 993);
     }
 }
 
