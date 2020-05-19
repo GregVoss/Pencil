@@ -5,6 +5,7 @@ public class PencilClass {
     private String paperText = "";
     private int durability = 1000;
     private int sharpenValue = 1000;
+    private int pencilLength = 10;
 
     public PencilClass() {
     }
@@ -40,6 +41,10 @@ public class PencilClass {
 
     public void sharpen() {
         durability = sharpenValue;
+    }
+
+    public int getLength() {
+        return pencilLength;
     }
 
 }

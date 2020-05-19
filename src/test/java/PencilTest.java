@@ -90,7 +90,11 @@ public class PencilTest {
         pencil.sharpen();
 
         assertEquals(1000, pencil.getDurability());
+    }
 
+    @Test
+    public void pencilHasDefaultLength() {
+        assertEquals(10, pencil.getLength());
     }
 }
 
