@@ -76,5 +76,13 @@ public class PencilTest {
         pencil.writeText("Caps");
         assertEquals(995, pencil.getDurability());
     }
+
+    @Test
+    public void whenOnlyOneSpaceLeftTheLastLetterCannotBeCaps() {
+        PencilClass shortPencil = new PencilClass(5);
+        shortPencil.writeText("carpS");
+        assertEquals("carp", shortPencil.readText());
+
+    }
 }
 

@@ -16,11 +16,15 @@ public class PencilClass {
         for(int charPlace = 0; charPlace < textToWrite.length() && durability > 0; charPlace++) {
             char currentChar = textToWrite.charAt(charPlace);
 
-            paperText += currentChar;
+            if(Character.isUpperCase(currentChar) && durability < 2) {
+                break;
+            }
 
             if(!Character.isWhitespace(currentChar)) {
                 durability = Character.isUpperCase(currentChar)?durability-2:durability-1;
             }
+
+            paperText += currentChar;
         }
     }
 
