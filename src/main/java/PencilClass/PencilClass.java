@@ -3,7 +3,7 @@ package PencilClass;
 public class PencilClass {
 
     private String paperText = "";
-    private int durability = 1000;
+    private int pencilDurability = 1000;
     private int sharpenValue = 1000;
     private int pencilLength = 10;
     private int eraserDurability = 100;
@@ -12,26 +12,26 @@ public class PencilClass {
     }
 
     public PencilClass(int pencilDurability) {
-        durability = pencilDurability;
+        this.pencilDurability = pencilDurability;
         sharpenValue = pencilDurability;
     }
 
     public PencilClass(int pencilDurability, int eraserDurability) {
-        durability = pencilDurability;
+        this.pencilDurability = pencilDurability;
         sharpenValue = pencilDurability;
         this.eraserDurability = eraserDurability;
     }
 
     public void writeText(String textToWrite) {
-        for(int charPlace = 0; charPlace < textToWrite.length() && durability > 0; charPlace++) {
+        for(int charPlace = 0; charPlace < textToWrite.length() && pencilDurability > 0; charPlace++) {
             char currentChar = textToWrite.charAt(charPlace);
 
-            if(Character.isUpperCase(currentChar) && durability < 2) {
+            if(Character.isUpperCase(currentChar) && pencilDurability < 2) {
                 break;
             }
 
             if(!Character.isWhitespace(currentChar)) {
-                durability = Character.isUpperCase(currentChar)?durability-2:durability-1;
+                pencilDurability = Character.isUpperCase(currentChar)?pencilDurability-2:pencilDurability-1;
             }
 
             paperText += currentChar;
@@ -42,23 +42,11 @@ public class PencilClass {
         return paperText;
     }
 
-    public int getDurability() {
-        return durability;
-    }
-
     public void sharpen() {
         if(pencilLength>0) {
-            durability = sharpenValue;
+            pencilDurability = sharpenValue;
             pencilLength--;
         }
-    }
-
-    public int getLength() {
-        return pencilLength;
-    }
-
-    public int getEraserDurability() {
-        return eraserDurability;
     }
 
     public void erase(String textToRemove) {
@@ -73,5 +61,19 @@ public class PencilClass {
 
             paperText = prefix+spaceString+suffix;
         }
+    }
+
+    /**  GET Methods **/
+
+    public int getDurability() {
+        return pencilDurability;
+    }
+
+    public int getLength() {
+        return pencilLength;
+    }
+
+    public int getEraserDurability() {
+        return eraserDurability;
     }
 }
