@@ -41,6 +41,7 @@ public class PencilClass {
 
     public void sharpen() {
         durability = sharpenValue;
+        pencilLength--;
     }
 
     public int getLength() {

@@ -96,5 +96,12 @@ public class PencilTest {
     public void pencilHasDefaultLength() {
         assertEquals(10, pencil.getLength());
     }
+
+    @Test
+    public void whenPencilIsSharpenedTheLengthIsReducedByOne() {
+        pencil.sharpen();
+
+        assertEquals(9, pencil.getLength());
+    }
 }
 
